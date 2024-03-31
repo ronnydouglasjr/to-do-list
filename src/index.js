@@ -16,7 +16,7 @@ $(document).ready(function () {
     } else {
       listArray.push(toList);
       const createElement = $(`<li>${toList}</li>`);
-      createElement.appendTo("#list");
+      createElement.appendTo("#list").hide().fadeIn(1000);
       $("#task").val("");
     }
   });
